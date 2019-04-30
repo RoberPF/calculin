@@ -10,7 +10,7 @@ module.exports = function (controller) {
     controller.hears([/^sumar$/], 'direct_message,direct_mention', function (bot, message) {
 
         bot.startConversation(message, function (err, convo) {
-            convo.say('Te voy a ayudar a sumar dos números, es algo muy difícil.');
+            convo.say('Te voy a ayudar a sumar dos números.');
 
             convo.ask('Dime el primer número?', function (response, convo) {
                 numero1 = parseInt(response.text,10);
