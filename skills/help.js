@@ -1,5 +1,5 @@
 //
-// Comando: ayuda
+// Comando: ayuda.
 //
 module.exports = function (controller) {
 
