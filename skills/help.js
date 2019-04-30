@@ -7,6 +7,8 @@ module.exports = function (controller) {
         var text = "Hola, esto es lo que sé hacer:";
         text += "\n- " + bot.appendMention(message, "sumar") + "; suma dos números";
         text += "\n- " + bot.appendMention(message, "restar") + "; resta dos números";
+        text += "\n- " + bot.appendMention(message, "multiplicar") + "; multiplica dos números";
+        text += "\n- " + bot.appendMention(message, "dividir") + "; divide dos números";
         text += "\n- " + bot.appendMention(message, "ayuda") + ": te digo las cosas que se hacer";
         bot.reply(message, text);
     });
