@@ -7,7 +7,7 @@ module.exports = function (controller) {
     var numero2 = 0;
     var resultado = 0;
 
-    controller.hears([/^multiplicar$/], 'direct_message,direct_mention', function (bot, message) {
+    controller.hears([/^multiplica$/], 'direct_message,direct_mention', function (bot, message) {
 
         bot.startConversation(message, function (err, convo) {
             convo.say('Te voy a ayudar a multiplicar dos números.');
