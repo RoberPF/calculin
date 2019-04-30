@@ -20,7 +20,7 @@ module.exports = function (controller) {
             convo.ask('Dime el segundo número?', function (response, convo) {
                 numero2 = parseInt(response.text,10);
                 resultado = numero1 - numero2;
-                convo.say(numero1 + " - " + numero2 + " es " + resultado);
+                convo.say(numero1 + " menos " + numero2 + " es " + resultado);
                 convo.next();
             });
             
