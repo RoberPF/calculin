@@ -7,7 +7,7 @@ module.exports = function (controller) {
     var numero2 = 0;
     var resultado = 0;
 
-    controller.hears([/^restar$/], 'direct_message,direct_mention', function (bot, message) {
+    controller.hears([/^resta$/], 'direct_message,direct_mention', function (bot, message) {
 
         bot.startConversation(message, function (err, convo) {
             convo.say('Te voy a ayudar a restar dos números.');
