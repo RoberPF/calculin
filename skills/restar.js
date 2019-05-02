@@ -12,12 +12,12 @@ module.exports = function (controller) {
         bot.startConversation(message, function (err, convo) {
             convo.say('Te voy a ayudar a restar dos números.');
 
-            convo.ask('Dime el primer número?', function (response, convo) {
+            convo.ask('Dime el primer número', function (response, convo) {
                 numero1 = parseInt(response.text,10);
                 convo.next();
             });
             
-            convo.ask('Dime el segundo número?', function (response, convo) {
+            convo.ask('Dime el segundo número', function (response, convo) {
                 numero2 = parseInt(response.text,10);
                 resultado = numero1 - numero2;
                 convo.say(numero1 + " menos " + numero2 + " es " + resultado);
