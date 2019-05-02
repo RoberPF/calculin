@@ -12,13 +12,13 @@ module.exports = function (controller) {
         bot.startConversation(message, function (err, convo) {
             convo.say('Te voy a ayudar a dividir dos números.');
 
-            convo.ask('Dime el primer número?', function (response, convo) {
+            convo.ask('Dime el primer número', function (response, convo) {
                 numero1 = parseInt(response.text,10);
                 //convo.say("Cool, I like '" + response.text + "' too!");
                 convo.next();
             });
             
-            convo.ask('Dime el segundo número?', function (response, convo) {
+            convo.ask('Dime el segundo número', function (response, convo) {
                 numero2 = parseInt(response.text,10);
                 resultado = numero1 / numero2;
                 convo.say(numero1 + " entre " + numero2 + " es " + resultado);
